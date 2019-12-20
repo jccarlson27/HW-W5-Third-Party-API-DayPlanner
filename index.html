@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+ 
+  <title>Work Day Scheduler</title>
+</head>
+ 
+<body>
+  <header class="jumbotron">
+    <h1 class="display-3">Work Day Scheduler</h1>
+    <p class="lead">A simple calendar app for scheduling your work day</p>
+    <p id="currentDay" class="lead"></p>
+  </header>
+  <div class="container">
+    <!-- Timeblocks go here -->
+    <div class="row">
+      <p class="col-md-2 hour" data-time="0900">9AM</p>
+      <textarea class="col-md-9 border" id="0"></textarea>
+      <button class="col-md-1 border saveBtn" value="0"><img
+          src="https://cdn2.iconfinder.com/data/icons/apple-classic/100/Apple_classic_10Icon_5px_grid-04-512.png">SAVE</img></button>
+    </div>
+    <div class="row">
+      <p class="col-md-2 hour" data-time="1000">10AM</p>
+      <textarea class="col-md-9 border" id="1"></textarea>
+      <button class="col-md-1 border saveBtn" value="1"><img
+          src="https://cdn2.iconfinder.com/data/icons/apple-classic/100/Apple_classic_10Icon_5px_grid-04-512.png">SAVE</img></button>
+    </div>
+    <div class="row">
+      <p class="col-md-2 hour" data-time="1100">11AM</p>
+      <textarea class="col-md-9 border" id="2"></textarea>
+      <button class="col-md-1 border saveBtn" value="2"><img
+          src="https://cdn2.iconfinder.com/data/icons/apple-classic/100/Apple_classic_10Icon_5px_grid-04-512.png">SAVE</img></button>
+    </div>
+    <div class="row">
+      <p class="col-md-2 hour" data-time="1200">12PM</p>
+      <textarea class="col-md-9 border" id="3"></textarea>
+      <button class="col-md-1 border saveBtn" value="3"><img
+          src="https://cdn2.iconfinder.com/data/icons/apple-classic/100/Apple_classic_10Icon_5px_grid-04-512.png">SAVE</img></button>
+    </div>
+    <div class="row">
+      <p class="col-md-2 hour" data-time="1300">1PM</p>
+      <textarea class="col-md-9 border" id="4"></textarea>
+      <button class="col-md-1 border saveBtn" value="4"><img
+          src="https://cdn2.iconfinder.com/data/icons/apple-classic/100/Apple_classic_10Icon_5px_grid-04-512.png">SAVE</img></button>
+    </div>
+    <div class="row">
+      <p class="col-md-2 hour" data-time="1400">2PM</p>
+      <textarea class="col-md-9 border" id="5"></textarea>
+      <button class="col-md-1 border saveBtn" value="5"><img
+          src="https://cdn2.iconfinder.com/data/icons/apple-classic/100/Apple_classic_10Icon_5px_grid-04-512.png">SAVE</img></button>
+    </div>
+    <div class="row">
+      <p class="col-md-2 hour" data-time="1500">3PM</p>
+      <textarea class="col-md-9 border" id="6"></textarea>
+      <button class="col-md-1 border saveBtn" value="6"><img
+          src="https://cdn2.iconfinder.com/data/icons/apple-classic/100/Apple_classic_10Icon_5px_grid-04-512.png">SAVE</img></button>
+    </div>
+    <div class="row">
+      <p class="col-md-2 hour" data-time="1600">4PM</p>
+      <textarea class="col-md-9 border" id="7"></textarea>
+      <button class="col-md-1 border saveBtn" value="7"><img
+          src="https://cdn2.iconfinder.com/data/icons/apple-classic/100/Apple_classic_10Icon_5px_grid-04-512.png">SAVE</img></button>
+    </div>
+    <div class="row">
+      <p class="col-md-2 hour" data-time="1700">5PM</p>
+      <textarea class="col-md-9 border" id="8"></textarea>
+      <button class="col-md-1 border saveBtn" value="8"><img
+          src="https://cdn2.iconfinder.com/data/icons/apple-classic/100/Apple_classic_10Icon_5px_grid-04-512.png">SAVE</img></button>
+    </div>
+</div>
+  <script src="script.js"></script>
+</body>
+ 
+</html>
